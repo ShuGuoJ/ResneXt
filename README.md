@@ -8,7 +8,7 @@ opencv 3.4
 # Result
 resnet50模型的学习曲线和测试准确率如下图所示:    
 ![image](img/resnet50_accuracy.svg)
-![image](img/resnet50_learning_cure.svg)
+![image](img/resnet50_learning_cure.svg)  
 resnext模型的学习曲线和测试准确率如下图所示:  
 ![image](img/resnext_accuracy.svg)
 ![image](img/resnext_learning_cure.svg)  
