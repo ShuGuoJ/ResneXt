@@ -6,4 +6,12 @@ pytorch 1.5
 torchvision 0.6  
 opencv 3.4
 # Result
+resnet50模型的学习曲线和测试准确率如下图所示:    
+![image](img/resnet50_accuracy.svg)
+![image](img/resnet50_learning_cure.svg)
+resnext模型的学习曲线和测试准确率如下图所示:  
+![image](img/resnext_accuracy.svg)
+![image](img/resnext_learning_cure.svg)  
+从图中可知，resnet50的准确率优于resnext。但是这并代表resnext的性能逊色于resnet。从resnext的学习曲线可知，模型的训练Loss还有下降的可能。但是由于电脑只有单卡而且无法多程序加载数据集，所以我并没有增加训练的epoch。从上面的accuracy可知，resnet和resnext两者在测试集上的准确率均偏低，这很有可能是模型并没有充分训练好所导致的结果，也有可能是模型本身的泛化能力差。所以，这也是接下来我需要研究的问题，如何训练好一个模型以及如何提高模型的泛化能力。
+
 
